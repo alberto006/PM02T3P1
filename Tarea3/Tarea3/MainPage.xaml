@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#666666" Padding="24" CornerRadius="0">
+            <Label Text="Calculadora IMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Ingrese su peso en kg y altura en cm"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        
+        <Entry Placeholder="Altura (cm)" x:Name="Altura" Keyboard="Numeric" Margin="40,20" />
+        <Entry Placeholder="Peso (kg)" x:Name="Peso" Keyboard="Numeric" Margin="40,20" />
+
+        <Entry Placeholder="Tu IMC" x:Name="IMC" IsEnabled="false" Margin="40,20"/>
+
+        <Button Text="Calcular" Clicked="Button_Clicked" Margin="40,40"/>
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
